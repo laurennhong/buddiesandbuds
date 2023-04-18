@@ -1,11 +1,27 @@
 body {
-    padding:20px;
+    background-color: #f5e6da;
+    width:600px;
+    margin:auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-size: 55px;
 }
 
 h2 {
-    color:rgb(61, 61, 61);
+    font-size: 38px;
 }
 
 p {
-    color:rgb(112, 112, 112);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#imgcaption {
+    font-size: 16px;
+}
+
+#values {
+    font-style: oblique;
 }
