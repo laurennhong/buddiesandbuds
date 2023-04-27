@@ -1,0 +1,52 @@
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+#quotebox p {
+    position: absolute;
+    padding: 5px;
+    font-size: 2em;
+    font-family: 'Inconsolata', monospace;
+    background-color: blanchedalmond;
+    transition: all 1s;
+}
+
+#introquote {
+    font-size: 300px;
+    font-weight: 800;
+    bottom: 30%;
+    left: 2%;
+}
+
+#quote1 {
+    bottom: 20%;
+    left: 10%;
+}
+
+#quote2 {
+    bottom: 15%;
+    left: 20%;
+}
+
+#quote3 {
+    bottom: 10%;
+    left: 30%;    
+}
+
+#quote4 {
+    bottom: 5%;
+    left: 40%;    
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
+}

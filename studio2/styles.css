@@ -1,0 +1,30 @@
+body {
+    background: rgb(249,238,214);
+    background: linear-gradient(303deg, rgba(249,238,214,1) 0%, rgba(220,240,241,1) 35%, rgba(240,225,235,1) 63%, rgba(249,238,214,1) 100%);
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding-top:20px;
+}
+
+div {
+    padding:20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#date {
+    font-size: 36px;
+}
+
+#time {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#albumcover {
+    width:300px;
+    margin:auto;
+}
+
+#song {
+    font-size: 22px;
+}

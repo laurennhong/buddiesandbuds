@@ -1,0 +1,130 @@
+/* colors
+BEAR 1
+green - #31493C
+beige - #D8A976
+wine - #805959
+blue - #8CC2CF
+purp - #AB89A0 
+
+BEAR 2
+maroon - #723D46
+coral - #BD605C
+yellow - #FADC89
+pink - #EDA4BD
+cream - #EED5C2
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D8A976;
+    color: rgb(61, 54, 48);
+    transition: all 2s;
+    font-family: 'Hepta Slab', serif;
+    font-weight: 200;
+}
+
+body.switch {
+    background-color: #EED5C2;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height:fit-content;
+    padding-left:0;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+#banner {
+    justify-content: center;
+    padding-bottom:20px;
+}
+
+#banner.switch {
+    transition: all 3s;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+
+main section {
+    width: 25%;
+    border: 10px solid transparent;
+    border-image: url(images/border1.png) 30% repeat;
+    margin: 0 1.5em;
+    padding: 1.5em;
+    padding-top:1em
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: black;
+}
+
+section a:hover {
+    background-color: #805959;
+    border-radius: 10px;
+    color: #fff2e4;
+}
+
+section.switch {
+    border: 10px solid transparent;
+    border-image: url(images/border2.png) 30% repeat;
+}
+
+section.switch a:hover {
+    background-color: #BD605C;
+    color: #fff2e4;
+}
+
+h3 {
+    text-align:center;
+    font-family: 'Hepta Slab', serif;
+}
+
+button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    transition-duration: 1s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}

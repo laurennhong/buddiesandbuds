@@ -1,0 +1,31 @@
+body {
+    background-color: #f5e6da;
+    width:600px;
+    margin:auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+a {
+    margin-top: 50px;
+}
+
+#imgcaption {
+    font-size: 16px;
+}
+
+#values {
+    font-style: oblique;
+}
