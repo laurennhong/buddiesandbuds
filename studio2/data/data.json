@@ -1,48 +1,48 @@
-[{
-	"date": "4/23",
+{ "point1" : {
+	"time": "9:00 am",
+	"song": "Good Days",
+	"artist": "SZA",
+	"lyrics": "gotta let go of weight, can't keep what's holdin' me, choose to watch while the world break up in front of me, all the while, i'll await my armored fate with a smile, still wanna try, still believe in good days"
+},
+"point2" : {
 	"time": "11:00 am",
-	"song": "Snooze",
-	"artist": "SZA"
+	"song": "little story",
+	"artist": "Kehlani",
+	"lyrics": "i want you to love me again and complete our little story, we got one hell of a story, you're a hell of an author, you swear i'll leave you at the altar workin' on bein' softer, you always been a dream to me, it's in the way you see through me"
 },
-{
-	"date": "4/23",
-	"time": "11:30 am",
-	"song": "simple times",
-	"artist": "Kasey Musgraves"
+"point3" : {
+	"time": "1:00 pm",
+	"song": "Endlessly",
+	"artist": "Kali Uchis",
+	"lyrics": "wanna spoil me in every way, it's valentine's like, every day, every night and every day, know what i like and know what i need, 'cause me, i'm the type you'll want make your wife, once you had this, you'll need it for life, it's never one night, it's never no games, got the type sex you'll put on repeat"
 },
-{
-	"date": "4/23",
-	"time": "12:00 pm",
-	"song": "Rose Colored Lenses",
-	"artist": "Miley Cyrus"
-},
-{
-	"date": "4/23",
-	"time": "12:30 pm",
-	"song": "Disillusioned",
-	"artist": "Daniel Caesar"
-},
-{
-	"date": "4/24",
-	"time": "10:00 pm",
+"point4" : {
+	"time": "3:00 pm",
 	"song": "16",
-	"artist": "Baby Keem"
+	"artist": "Baby Keem",
+	"lyrics": "won't you think about you and i? just grab my hand and look me in the eye but this ain't something you should decide, this ain't something that you should decide"
 },
-{
-	"date": "4/24",
-	"time": "10:30 pm",
-	"song": "Double Fantasy",
-	"artist": "The Weeknd ft. Future"
+"point5" : {
+	"time": "5:00 pm",
+	"song": "Snooze",
+	"artist": "SZA",
+	"lyrics": "i can't lose when i'm with you, how can i snooze and miss the moment? you just too important, nobody do body like you do"
 },
-{
-	"date": "4/24",
+"point6" : {
+	"time": "7:00 pm",
+	"song": "Disillusioned",
+	"artist": "Daniel Caesar",
+	"lyrics": "let's go to a boardwalk watch the people walking by, we'll make fun of their outfits, we'll be cynics, we'll get high, then find a spot that's so secluded do what lovers do, i love being reclusive and i love being with you"
+},
+"point7" : {
+	"time": "9:00 pm",
+	"song": "Around Me",
+	"artist": "Metro Boomin ft. Don Toliver",
+	"lyrics": "heroes are inspired, emerging only when needed, revealing themselves to the world in a moment marked by the realization of their ultimate destiny with backs against the wall, they ascend the winding path of their own fate, barely knowing the ledge, despite coping with living their whole life as two halves"
+},
+"point8" : {
 	"time": "11:00 pm",
-	"song": "Too Many Nights",
-	"artist": "Metro Boomin ft. Future and Don Toliver"
-},
-{
-	"date": "4/24",
-	"time": "11:30 pm",
-	"song": "missin something",
-	"artist": "Zach Templar"
-}]
+	"song": "Miles",
+	"artist": "SZA",
+	"lyrics": "and why can't i be like everybody else, losin' my mind, think i look good when i'm really just high, scared of my life, can a bitch get by?  sick of listening to everyone else, sick of my pride, sick of just sayin' shit just to be nice, scared of this world, how do i get by?"
+}}

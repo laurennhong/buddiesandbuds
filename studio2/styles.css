@@ -1,30 +1,64 @@
 body {
-    background: rgb(249,238,214);
-    background: linear-gradient(303deg, rgba(249,238,214,1) 0%, rgba(220,240,241,1) 35%, rgba(240,225,235,1) 63%, rgba(249,238,214,1) 100%);
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
     text-align: center;
-    width: 500px;
     margin: auto;
-    padding-top:20px;
+    padding:40px;
+    padding-top:60px;
+    color: white;
 }
 
-div {
-    padding:20px;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-#date {
-    font-size: 36px;
+section {
+    width:600px;
+    text-align: center;
 }
 
 #time {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    padding:5px;
 }
 
 #albumcover {
-    width:300px;
     margin:auto;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+p {
+    margin:0;
 }
 
-#song {
-    font-size: 22px;
+div {
+    align-items:center;
+}
+
+#songcontainer {
+    width: 300px;
+}
+
+#song p {
+    background-color: #E91E79;
+    padding:7px;
+    font-size: 36px;
+    font-family: 'Manrope', sans-serif;
+}
+
+#lyriccontainer {
+    padding-top:30px;
+    text-align: left;
+    font-size: 36px;
+}
+
+.star {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#lyrics p {
+    font-family: 'Genos', sans-serif;
+    line-height: 1.3;
 }

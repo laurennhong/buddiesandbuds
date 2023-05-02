@@ -7,17 +7,24 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Genos:wght@500&family=Manrope:wght@700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Ministudio 2: Check Yourself</title>
 </head>
 <body>
-    <div id="date">DATE</div>
-    <div id="time">TIME</div>
-    <div id="albumcover">COVER</div>
-    <div id="controls">CONTROLS</div>
-    <div id="song">SONG</div>
-    <div id="artist">ARTIST</div>
+    <section id="songcontainer">
+        <form>
+            <select id="time">
+            </select>
+        </form>
+        <img src="images/point1.png" alt="albumcovers" width="300" id="albumcover">
+        <div id="song"></div>
+    </section>
+    <section id="lyriccontainer">
+        <p class="star">⭒⭒⭒</p>
+        <div id="lyrics"></div>
+        <p class="star">⭒⭒⭒</p>
+    </section>
 </body>
 </html>
