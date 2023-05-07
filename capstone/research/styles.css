@@ -29,3 +29,7 @@ a {
 #values {
     font-style: oblique;
 }
+
+ul {
+    list-style-type: none;
+}
