@@ -1,0 +1,15 @@
+/* color palette
+pink: #db7f8e
+yellow: #ffdc2d
+brown: #854d27
+blue: #c8f7f9
+green: #9fd356
+
+typeface
+font-family: 'Pangolin', cursive; */
+body {
+    font-family: 'Pangolin', cursive;
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+}
