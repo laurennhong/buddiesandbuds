@@ -29,3 +29,14 @@ p {
     font-size: 20px;
     line-height: 1.5;
 }
+
+img {
+    border:3px solid black;
+}
+
+#papergrid {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 25px;
+    grid: 225px / auto auto
+}
