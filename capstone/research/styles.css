@@ -34,6 +34,16 @@ ul {
     list-style-type: none;
 }
 
+ol {
+    line-height: 2;
+}
+
 #moodboard {
     width: 800px;
+}
+
+#interviewees {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
