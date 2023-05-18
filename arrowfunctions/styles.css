@@ -1,0 +1,46 @@
+body {
+    background-color: #f5e6da;
+    width:600px;
+    margin:auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.miniheading {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+img {
+    border:3px solid black;
+}
+
+#papergrid {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 25px;
+    grid: 225px / auto auto
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}

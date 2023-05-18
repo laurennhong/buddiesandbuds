@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <h1>Arrow Functions</h1>
+
+    <p>The function counts the letters in a word and returns a string with the outcome.</p>
+
+    <h2>Named Function</h2>
+    <code>
+        <pre>
+            function numLetters(word){
+            return(`${word} has ${word.length} letters`);
+        }
+        </pre>
+    </code>
+
+    <h2>Function Expression</h2>
+    <code>
+        <pre>
+            const numLetters = function(word){
+                return(`${word} has ${word.length} letters`);
+            }
+        </pre>
+    </code>
+
+    <h2>Arrow Function</h2>
+    <code>
+        <pre>
+            const numLetters = (word) => `${word} has ${word.length} letters`;
+        </pre>
+    </code>
+
+    <a href="practice.html">Practice File</a><br>
+    <a href="challenges.html">Challenge Files</a><br><br>
+    <footer> Lauren Hong </footer>
+</body>
+</html>

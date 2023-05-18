@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h1>Arrow Functions Examples</h1>
+    <p>Open console to see examples</p>
+    <script>
+        //MAKEUPPERCASE FUNCTIONS
+        // function makeUpperCase(aString) {
+        //     return aString.toUpperCase();
+        // }
+
+        // const makeUpperCase = function(aString){
+        //     return aString.toUpperCase();
+        // }
+
+        // const makeUpperCase = (aString) => {
+        //     return aString.toUpperCase();
+        // }
+
+        // const makeUpperCase = aString => {
+        //     return aString.toUpperCase();
+        // }
+
+        const makeUpperCase = aString => aString.toUpperCase();
+
+        //TEST FUNCTIONS
+        console.log('Practice 1');
+        console.log(makeUpperCase("here is a string"));
+
+        //FULLNAME FUNCTIONS
+        // const fullName = (fname, lname) => `${fname} ${lname}`;
+        // console.log(fullName('lauren', 'hong'));
+
+        const fullName = () => {
+            const fname = 'lauren';
+            const lname = 'hong';
+            return `${fname} ${lname}`;
+        }
+        console.log('Practice 2');
+        console.log(fullName());
+
+        // UPPERFRUIT FUNCTIONS
+        const fruit = ['banana', 'apple', 'lemon', 'kiwi'];
+        const upperFruit = [];
+
+        // fruit.forEach(function(thisFruit){
+        //     upperFruit.push(thisFruit.toUpperCase());
+        // })
+
+        fruit.forEach(thisFruit => {
+            upperFruit.push(thisFruit.toUpperCase());
+        })
+
+        console.log('Practice 3');
+        console.log(upperFruit);
+
+        //EMPLOYEENAME FUNCTION
+        // const employee = function(fname, lname, jobTitle) {
+        //     this.fname = fname;
+        //     this.lname = lname;
+        //     this.position = jobTitle;
+        //     this.fullName = function() {
+        //         return `${fname} ${lname}`;
+        //     }
+        // }
+
+        const employee = function(fname, lname, jobTitle) {
+            this.fname = fname;
+            this.lname = lname;
+            this.position = jobTitle;
+            this.fullName = () => `${fname} ${lname}`;
+        }
+
+        const id1234 = new employee('bob', 'smith', 'mechanic');
+        console.log('Practice 4');
+        console.log(id1234.fname);
+        console.log(id1234.fullName());
+    </script>
+</body>
+</html>

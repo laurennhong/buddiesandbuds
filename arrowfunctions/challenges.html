@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Arrow Function Challenge</title>
+</head>
+<body>
+    <h1>Arrow Function Challenges</h1>
+    <p>Open console to see challenges</p>
+    <script>
+        //CHALLENGE 1
+        console.log('Challenge 1');
+        // function greeting(fname, lname) {
+        //     return `Hello ${fname} ${lname}`;
+        // }
+        const greeting = (fname, lname) => `Hello ${fname} ${lname}`;
+        console.log(greeting('Lauren', 'Hong'));
+
+        //CHALLENGE 2
+        console.log('Challenge 2');
+        // function square(x){
+        //     return x * x;
+        // }
+        const square = x => x * x;
+        console.log(square(2));
+
+        //CHALLENGE 3
+        console.log('Challenge 3');
+        // function largestNum(num1, num2) {
+        //     return num1 > num2 ? num1 : num2;
+        // }
+        const largestNum = (num1, num2) => num1 > num2 ? num1 : num2;
+        console.log(largestNum(45, 22));
+
+        //CHALLENGE 4
+        console.log('Challenge 4');
+        const animals = ['llama', 'chicken', 'dog', 'cat'];
+        // animals.forEach(function(eachAnimal){
+        //     const upperCase = eachAnimal.toUpperCase();
+        //     console.log(upperCase);
+        // });
+        animals.forEach(eachAnimal => {
+            const upperCase = eachAnimal.toUpperCase();
+            console.log(upperCase);
+        });
+
+        //CHALLENGE 5
+        console.log('Challenge 5');
+        const scores = [5, 10, 15, 20];
+        // function totals(accumulator, curValue) {
+        //     return accumulator + curValue;
+        // }
+        // console.log(scores.reduce(totals));
+        console.log(scores.reduce((accumulator, curValue) => accumulator + curValue));
+    </script>
+</body>
+</html>
