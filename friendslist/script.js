@@ -1,5 +1,6 @@
 (function() {
     Parse.initialize("Pa2EEbegGBXx8eUx7uribKTh6Wt6P86Hy4hZimTq", "iqYl4XWheeX66z0SGNWqVby71R9rMbc5MFeCRDKP"); 
+    // Parse.initialize("scx1vf1uon4SC5aeKQ7pzZRKHKxQZ283oXMcoiNX", "ZYDIJoJiAniMA3MeVcqb2hEGIE8kdIm2z11F4ZiF"); 
     Parse.serverURL = 'https://parseapi.back4app.com/';
 
     const newBtn = document.getElementById('newbtn');
@@ -8,33 +9,33 @@
     const editFriendForm = document.getElementById("edit-friend");
     const friendList = document.querySelector("main ol");
 
-    newBtn.addEventListener("click", function(event){
-        event.preventDefault();
-        addFriendForm.className = "add-friend-onscreen";
-    });
-    addFriendForm.addEventListener("submit", function(event){
-        event.preventDefault();
-        addFriendForm.className = "add-friend-offscreen";
-    });
+    // newBtn.addEventListener("click", function(event){
+    //     event.preventDefault();
+    //     addFriendForm.className = "add-friend-onscreen";
+    // });
+    // addFriendForm.addEventListener("submit", function(event){
+    //     event.preventDefault();
+    //     addFriendForm.className = "add-friend-offscreen";
+    // });
 
-    for (let i=0; i < editBtns.length; i++) {
-        editBtns[i].addEventListener("click", function(event){
-            event.preventDefault();
-            editFriendForm.className = "edit-friend-onscreen";
-        })
-    }
+    // for (let i=0; i < editBtns.length; i++) {
+    //     editBtns[i].addEventListener("click", function(event){
+    //         event.preventDefault();
+    //         editFriendForm.className = "edit-friend-onscreen";
+    //     })
+    // }
 
-    editFriendForm.addEventListener("submit", function(event) {
-        event.preventDefault();
-        editFriendForm.className = "edit-friend-offscreen";
-    });
+    // editFriendForm.addEventListener("submit", function(event) {
+    //     event.preventDefault();
+    //     editFriendForm.className = "edit-friend-offscreen";
+    // });
 
     async function displayFriends() {
-        const friends = Parse.Object.extend('Friends');
+        const friends = Parse.Object.extend('Friend');
         const query = new Parse.Query(friends);
         try {
             const results = await query.ascending('lname').find();
-            //console.log(results);
+            console.log(results);
 
             results.forEach(function(eachFriend){
                 const id = eachFriend.id;
@@ -70,4 +71,25 @@
         }
     }
     displayFriends();
+
+    newBtn.addEventListener("click", function(event){
+        event.preventDefault();
+        addFriendForm.className = "add-friend-onscreen";
+    });
+    addFriendForm.addEventListener("submit", function(event){
+        event.preventDefault();
+        addFriendForm.className = "add-friend-offscreen";
+    });
+
+    for (let i=0; i < editBtns.length; i++) {
+        editBtns[i].addEventListener("click", function(event){
+            event.preventDefault();
+            editFriendForm.className = "edit-friend-onscreen";
+        })
+    }
+
+    editFriendForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        editFriendForm.className = "edit-friend-offscreen";
+    });
 })();
