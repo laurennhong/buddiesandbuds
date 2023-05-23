@@ -30,7 +30,7 @@ p {
     line-height: 1.5;
 }
 
-img {
+img, video {
     border:3px solid black;
 }
 
@@ -39,4 +39,8 @@ img {
     column-gap: 50px;
     row-gap: 25px;
     grid: 225px / auto auto
+}
+
+#ic {
+    width: 800px;
 }
