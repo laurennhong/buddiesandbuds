@@ -8,30 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
     <link href="styles.css" rel="stylesheet"/>
     <title>Ministudio 3: Library Liberty</title>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <section id="camera">
-        <p>camera here</p>
-    </section>
     <section id="palette">
         <h1>What do you see?</h1>
-        <button id="red"></button>
-        <button id="orange"></button>
-        <button id="yellow"></button>
-        <button id="green"></button>
-        <button id="blue"></button>
-        <button id="purple"></button>
-        <button id="pink"></button>
-        <button id="black"></button>
         <article>
             <h2>Instructions</h2>
-            <p>Draw what you see through the camera. What's in you surroundings? Who do you see? Try drawing your face with one line.</p>
+            <p>Draw what you see around you. What's in you surroundings? Who do you see? Try drawing your face with one line! Or, draw whatever you'd like!</p>
         </article>
+        <div id="paintbuttons">
+            <button id="red"></button>
+            <button id="orange"></button>
+            <button id="yellow"></button>
+            <button id="green"></button>
+            <button id="blue"></button>
+            <button id="purple"></button>
+            <button id="pink"></button>
+            <button id="black"></button>
+            <button id="delete"><img src="images/delete.svg" alt="delete" width="60"></button>
+        </div>
     </section>
+    <div id="mySketch">
+    </div>
 </body>
 </html>
