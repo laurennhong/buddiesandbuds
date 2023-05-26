@@ -7,34 +7,71 @@ const purple = document.querySelector('#purple');
 const pink = document.querySelector('#pink');
 const black = document.querySelector('#black');
 const clear = document.querySelector('#delete');
+let strokeR = 0;
+let strokeG = 0;
+let strokeB = 0;
 
 function setup() {
-    const myCanvas = createCanvas(1200,750);
+    const myCanvas = createCanvas(850,500);
     myCanvas.parent('mySketch');
     background(255);
 }
 
-// function click(x) {
-//     x.onclick = function() {
-//         stroke(x);
-//     }
-// }
+red.addEventListener('click',function(){
+    strokeR = 255;
+    strokeG = 0;
+    strokeB = 0;
+});
 
-function redclick() {
-    red.onclick = function() {
-        stroke(255,0,0);
-    }
-}
-    
+orange.addEventListener('click',function(){
+    strokeR = 255;
+    strokeG = 165;
+    strokeB = 0;
+});
+
+yellow.addEventListener('click',function(){
+    strokeR = 255;
+    strokeG = 255;
+    strokeB = 0;
+});
+
+green.addEventListener('click',function(){
+    strokeR = 0;
+    strokeG = 128;
+    strokeB = 0;
+});
+
+blue.addEventListener('click',function(){
+    strokeR = 0;
+    strokeG = 0;
+    strokeB = 255;
+});
+
+purple.addEventListener('click',function(){
+    strokeR = 128;
+    strokeG = 0;
+    strokeB = 128;
+});
+
+pink.addEventListener('click',function(){
+    strokeR = 255;
+    strokeG = 192;
+    strokeB = 203;
+});
+
+black.addEventListener('click',function(){
+    strokeR = 0;
+    strokeG = 0;
+    strokeB = 0;
+});
+
 function draw() {
-    stroke(0);
+    stroke(strokeR, strokeG, strokeB);
     strokeWeight(16);
     if (mouseIsPressed === true) {
         line(mouseX, mouseY, pmouseX, pmouseY);
-    } else if (red.onclick) {
-        stroke(255,0,0);
     } 
-    // if (click(red)){
-
-    // }
+    clear.addEventListener('click', function(){
+        setup();
+    })
 }
