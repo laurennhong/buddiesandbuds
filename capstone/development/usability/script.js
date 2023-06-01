@@ -5,10 +5,15 @@
     const homepage = document.querySelector("#homepage");
     const homeicon = document.querySelector(".homeicon");
     const cow = document.querySelector('#cow');
+    const next = document.querySelector('#next');
     cow.addEventListener('click', function(event){
         document.querySelector('#homepage').className = 'hidden';
         document.querySelector('#cowpage1').className = 'showing';
         // homepage.style.left = "-100vw";
+        next.addEventListener('click', function(event) {
+            document.querySelector('#cowpage1').className = 'hidden';
+            document.querySelector('#cowpage2').className = 'showing';
+        })
     })
 
     homeicon.addEventListener('click', function() {
