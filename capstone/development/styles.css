@@ -44,3 +44,19 @@ img, video {
 #ic {
     width: 800px;
 }
+
+#testrecordings {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+#userreport {
+    width:1000px;
+}
+
+ol, ul {
+    font-size: 20px;
+    line-height:1.5;
+    letter-spacing: 0.75px;
+}
