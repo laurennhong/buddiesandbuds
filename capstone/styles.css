@@ -36,19 +36,19 @@ body {
 }
 
 #headinghome {
-    scale:1.5;
+    transform: scale(1.5);
 }
 
 #homepage  {
     margin-top:15%;
 }
 
-.homeicon {
+.homeicon, .homeicon2, .homeicon3, .homeicon4, .homeicon5, .homeicon6, .hi, .hi2, .hi3, .hi4, .hi5, .hi6, .hi7, .hi8, .hi9, .hi10, .hi11, .hi12 {
     position:absolute;
     top:40px;
     left:20px;
 }
-.homeicon:hover {
+.homeicon:hover, .homeicon2:hover, .homeicon3:hover, .homeicon4:hover, .homeicon5:hover, .homeicon6:hover, .hi:hover, .hi2:hover, .hi3:hover, .hi4:hover, .hi5:hover, .hi6:hover {
     cursor:pointer;
 }
 
@@ -75,31 +75,48 @@ button:hover {
     display:none;
 }
 
-.page1layout, .page3layout {
+.page1layout, .page3layout, .page2layoutplant {
     display: flex;
     flex-direction: row;
 }
 .page2layout {
+    margin-top:30px;
     display: flex;
     flex-direction: column;
     align-items:center;
 }
 
-.page3layout {
-    justify-content:right;
+.page2layoutplant, .page3layout {
+    justify-content: center;
+}
+
+.page2layout img {
+    position: absolute;
+    top:35%;
+    padding-top: 0px;
+}
+
+.page2layout #cowpage2, .page2layout #turtlepage2 {
+    top:30%;
+}
+
+.page3layout  {
     align-items:center;
 }
 
-.page1article {
-    position: absolute;
-    top:10px;
-    left:50%;
+.page1article, .page2articleplant {
+    margin-top:20px;
     width: 500px;
+    height:fit-content;
 }
 
 .page2article {
-    width: 75%;
+    width: 80%;
     border-radius:50px;
+}
+
+.page2articleplant {
+    border-radius:50px 50px 0px 50px;
 }
 
 .page3article {
@@ -110,9 +127,10 @@ button:hover {
 
 .flip {
     transform: scaleX(-1);
+    padding:0px;
 }
 
-.next, .next2, .backhome {
+.next, .next2, .backhome, .next3, .next4, .backhome2, .next5, .next6, .backhome3, .next7, .next8, .backhome4, .next9, .next10, .backhome5, .next11, .next12, .backhome6, .n, .bh, .n2, .n3, .bh2, .n4, .n5, .bh3, .n6, .n7, .bh4, .n8, .n9, .bh5, .n10, .n11,.n12, .bh6 {
     position:absolute;
     bottom:30%;
     right:70px;
@@ -125,7 +143,7 @@ button:hover {
     font-family: 'Pangolin', cursive;
 }
 
-.back, .back2 {
+.back, .back2, .back3, .back4, .back5, .back6, .back7, .back8, .back9, .back10, .back11, .back12, .b, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9, .b10, .b11, .b12 {
     position:absolute;
     top:0px;
     left:20px; 
@@ -141,11 +159,11 @@ section {
 }
 
 article {
-    font-size: 30px;
+    font-size: 27px;
     background-color:white;
     border: 3px solid black;
     border-radius:50px 50px 50px 0px;
-    padding:40px;
+    padding:30px;
     text-align: left;
 }
 
